@@ -1,1 +1,1 @@
-This is the Project in the Computer Programming 2 course
+This is the Project of Computer Programming 2 course
