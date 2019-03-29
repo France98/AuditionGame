@@ -27,16 +27,13 @@ class AuditionWindow(arcade.Window):
         super().__init__(width, height)
 
         arcade.set_background_color(arcade.color.GRAY_BLUE)
-
-        for y in range(0,601,200):
-            arcade.draw_line(0,y,800,y,arcade.color.BLACK,2)
+        arcade.draw_line(150,0,150,600,arcade.color.BLACK,10)
 
         self.world = World(width, height)
-        self.arrow_sprite = ModelSprite('images/ship.png',model=self.world.arrow)
  
     def on_draw(self):
         arcade.start_render()
-        self.arrow_sprite.draw()
+        arcade.draw_text("score", 880, 540, arcade.color.BLACK, 20)
  
 if __name__ == '__main__':
     window = AuditionWindow(SCREEN_WIDTH, SCREEN_HEIGHT)
